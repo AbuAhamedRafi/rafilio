@@ -39,17 +39,10 @@ const info = {
 			title: "Draw & Classify",
 			description: "Draw & Classify is a web application designed to test my machine learning model, which classifies drawn letters, digits, or shapes.",
 			technologies: "React, Tailwind, Tensorflow",
-			github: "https://github.com/dsbalico/letter-digit-shape-classification",
-            link: "https://letterdigitshape-classification.netlify.app/"
+			github: "",
+            // link: ""
 		},
 
-		// {
-		// 	title: "Chatroom",
-		// 	description: "Chatroom is a simple online chatting web application where you can create chat rooms and have a fun conversation with a group of people.",
-		// 	technologies: "React, Tailwind, Firebase",
-		// 	github: "https://github.com/dsbalico/chatroom",
-        //     link: "https://thechatroom.netlify.app/"
-		// },
 
 		{
 			title: "Vote App - Backend",
@@ -58,14 +51,6 @@ const info = {
 			github: "https://github.com/AbuAhamedRafi/VoteApp_backend",
             // link: "https://sudoku-solver-sa.netlify.app/"
 		},
-
-		// {
-		// 	title: "Probability Pick",
-		// 	description: "Probability Pick is a PCSO Lotto Number Generator that calculates the likelihood of selecting winning numbers based on historical draw data.",
-		// 	technologies: "React, Tailwind, Flask",
-		// 	github: "https://github.com/dsbalico/pcso-lotto-number-generator",
-        //     link: "https://probability-pick.netlify.app/"
-		// },
     ],
 
     // ============ EDUCATION ============

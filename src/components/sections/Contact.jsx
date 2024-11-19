@@ -23,6 +23,16 @@ function Contact() {
       {/* =========== LINKS =========== */}
       <div className="flex justify-center items-center h-80 px-4">
   <div className="space-y-10">
+    {/* =========== LINKEDIN =========== */}
+    <a
+      href={user_info.socials.linkedin}
+      className="flex items-center gap-4 text-zinc-600 dark:text-zinc-300 transition-all duration-300 group"
+    >
+      <FaLinkedin className="text-2xl text-red-800 dark:text-red-500 transition-all duration-300 group-hover:text-blue-700 dark:group-hover:text-blue-600" />
+      <span className="text-lg font-medium transition-all duration-300 group-hover:scale-105 group-hover:text-blue-700 dark:group-hover:text-blue-600">
+        Follow on Linkedin
+      </span>
+    </a>
     {/* =========== FACEBOOK =========== */}
     <a
       href={user_info.socials.facebook}
@@ -56,16 +66,7 @@ function Contact() {
       </span>
     </a>
 
-    {/* =========== LINKEDIN =========== */}
-    <a
-      href={user_info.socials.linkedin}
-      className="flex items-center gap-4 text-zinc-600 dark:text-zinc-300 transition-all duration-300 group"
-    >
-      <FaLinkedin className="text-2xl text-red-800 dark:text-red-500 transition-all duration-300 group-hover:text-blue-700 dark:group-hover:text-blue-600" />
-      <span className="text-lg font-medium transition-all duration-300 group-hover:scale-105 group-hover:text-blue-700 dark:group-hover:text-blue-600">
-        Follow on Linkedin
-      </span>
-    </a>
+    
   </div>
 </div>
 

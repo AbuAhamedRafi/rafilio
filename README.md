@@ -1,14 +1,6 @@
 
 # Rafilio V1
 
-<!-- <center>
-    <img src="/" alt="rafilio" />
-</center> -->
-
-<!-- <center>
-
-</center> -->
-
 ## Technologies Used
 <img  src="https://skillicons.dev/icons?i=html,css,react,tailwind,netlify&perline=7"/>
 
@@ -23,13 +15,13 @@
     ```
 3. Install dependencies
     ```bash
-    yarn install 
+    npm install 
     ```
 
 ## Usage
 To start the development server and view the project in your browser, run the following command:
 ```bash
-yarn dev
+npm run dev
 ```
 Visit http://localhost:5173/ in your browser
 
