@@ -5,15 +5,13 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen flex flex-col justify-center items-center py-8"
+      className="md:h-screen min-h-screen flex flex-col justify-center items-center py-8"
     >
-
-      <h2 className="text-4xl font-bold text-zinc-800 dark:text-white mb-8">
+      <h2 className="text-4xl font-bold text-zinc-800 dark:text-white">
         Projects
       </h2>
 
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:px-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:px-16 py-8">
         {user_info.projects.map((project, index) => {
           return (
             <Project

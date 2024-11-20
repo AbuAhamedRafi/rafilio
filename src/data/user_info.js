@@ -28,6 +28,14 @@ const info = {
 		},
 
         {
+			title: "Draw & Classify",
+			description: "Draw & Classify is a web application designed to test my machine learning model, which classifies drawn letters, digits, or shapes.",
+			technologies: "React, Tailwind, Tensorflow",
+			github: "https://github.com/AbuAhamedRafi/Classify-Shapes",
+            // link: ""
+		},
+
+        {
 			title: "Inventory Management System",
 			description: "Developed an Inventory Management System for Computer Services Limited.",
 			technologies: "Livewire, Laravel",
@@ -35,15 +43,7 @@ const info = {
             // link: ""
 		},
 
-        {
-			title: "Draw & Classify",
-			description: "Draw & Classify is a web application designed to test my machine learning model, which classifies drawn letters, digits, or shapes.",
-			technologies: "React, Tailwind, Tensorflow",
-			github: "",
-            // link: ""
-		},
-
-
+        
 		{
 			title: "Vote App - Backend",
 			description: "Created a simple vote app backend to learn and implement Rest API in Laravel.",
@@ -103,7 +103,7 @@ const info = {
             position: "Intern - Admin",
             company: "Repliq .dev",
             duration: "Jan 2024 - Feb 2024",
-            image: "csl.jpeg",
+            image: "repliq2x-logo.png",
             descriptions: [
                 "Worked with CEO and HR Manager to take Administrative decisions.",
                 "Learned about Keeping records and Productivity software ClickUP."
@@ -120,8 +120,8 @@ const info = {
             link: "https://drive.google.com/file/d/1KcDI83UfyEMjrnArYFlkj9zqNNcxDLBi/view?usp=sharing",
         },
         {
-            title: "Git and GitHub Essentials",
-            description: "Provided by Coursera & Authorized by IBM",
+            title: "Software Engineer - Internship",
+            description: "Provided by Computer Services Limited",
             icon: "ibm",
             link: "",
         },

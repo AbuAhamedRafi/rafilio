@@ -4,10 +4,9 @@ import { IoIosArrowForward } from "react-icons/io";
 function Hero() {
   return (
     <>
-      <section id="hero" className="min-h-4 flex px-6 lg:px-24">
+      <section id="hero" className=" md:min-h-screen flex px-6 lg:px-24">
         <div className="self-center w-full">
           <div className="w-full text-zinc-900 dark:text-zinc-100 px-4 sm:px-6 flex flex-col md:grid md:grid-cols-3 items-center gap-10">
-
             <div className="md:col-span-1 order-1 md:order-2 flex justify-center w-1/2 md:w-full mt-10 md:mt-0">
               <img
                 className="rounded-3xl transform rotate-3 w-full max-w-sm md:max-w-full"
@@ -15,7 +14,6 @@ function Hero() {
                 alt="Rafi Picture"
               />
             </div>
-
 
             <div className="md:col-span-2 order-2 md:order-1 text-center md:text-left">
               <div>

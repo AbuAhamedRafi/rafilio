@@ -6,7 +6,7 @@ function NotFound() {
 
     return (
         <div className="bg-zinc-50 dark:bg-zinc-900">
-            <div className="md:max-w-[1200px] mx-auto h-full border-x border-zinc-100 dark:border-zinc-800 bg-white dark:bg-zinc-950">
+            <div className="mx-auto h-full border-x border-zinc-100 dark:border-zinc-800 bg-white dark:bg-zinc-950">
                 <div className='flex h-screen justify-center px-6'>
                     <div className='self-center text-zinc-900 dark:text-zinc-300'>
                         <div className='flex text-5xl justify-center font-bold gap-4'>
