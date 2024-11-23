@@ -11,17 +11,19 @@ function Certificates() {
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % certificates.length);
-    }, 3000); 
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [certificates.length]);
 
   return (
     <section
-      id="certificates" 
+      id="certificates"
       className="flex flex-col items-center py-8 px-4 "
     >
-      <h4 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">Certificates</h4>
+      <h4 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">
+        Certificates
+      </h4>
 
       <div className="relative w-full max-w-7xl overflow-hidden">
         <div className="relative flex items-center justify-center w-full h-52 sm:h-64 lg:h-80 shadow-lg rounded-md">

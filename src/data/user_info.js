@@ -116,13 +116,13 @@ const info = {
         {
             title: "CCNAv7: Introduction to Networks",
             description: "Provided by Cisco Network Aademy",
-            icon: "cisco",
+            icon: "Cisco",
             link: "https://drive.google.com/file/d/1KcDI83UfyEMjrnArYFlkj9zqNNcxDLBi/view?usp=sharing",
         },
         {
             title: "Software Engineer - Internship",
             description: "Provided by Computer Services Limited",
-            icon: "ibm",
+            icon: "",
             link: "",
         },
         

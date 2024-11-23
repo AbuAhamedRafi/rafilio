@@ -1,6 +1,6 @@
 import { CgDarkMode } from "react-icons/cg";
 
-function ToggleTheme({ switchTheme }) {
+function Navbar({ switchTheme }) {
   return (
     <div className="relative flex items-center justify-between w-full px-6 py-8  md:w-auto md:px-6">
       <div className="flex items-center gap-2">
@@ -32,4 +32,4 @@ function ToggleTheme({ switchTheme }) {
   );
 }
 
-export default ToggleTheme;
+export default Navbar;

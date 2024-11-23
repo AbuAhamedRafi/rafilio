@@ -2,7 +2,7 @@ import { AppContext } from "../App.jsx";
 import { useContext, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import ToggleTheme from "../components/ToggleTheme.jsx";
+import Navbar from "../components/sections/Navbar.jsx";
 import Hero from "../components/sections/Hero.jsx";
 import Projects from "../components/sections/Projects.jsx";
 import Contact from "../components/sections/Contact.jsx";
@@ -23,7 +23,7 @@ function Homepage() {
   return (
     <div className="bg-zinc-100 dark:bg-zinc-900">
       <div className="xl md:mx-auto h-full border-x border-zinc-100 dark:border-zinc-800 bg-white dark:bg-zinc-950">
-        <ToggleTheme switchTheme={switchTheme} />
+        <Navbar switchTheme={switchTheme} />
         <Hero />
         <Projects />
         <Education />
