@@ -128,6 +128,12 @@ const info = {
         
     ],
 
+    // ============ RESUME ============
+    resume: {
+        description: "You can download the last updated version of my Resume",
+        resumeLink: "/path/to/your/resume.pdf",
+      },
+
     // ============ CONTACT ============
     contact: {
         title: "Let's Get in Touch: Ways to Connect with Me",
@@ -138,4 +144,5 @@ const info = {
     footer: "© 2024 Abu Ahamed Rafi. All Rights Reserved"
 }
 
-export default info
+export default info;
+

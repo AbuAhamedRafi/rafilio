@@ -1,5 +1,6 @@
 import user_info from "../../data/user_info.js";
-import { FaBuildingUser } from "react-icons/fa6";
+import { MdOutlineWorkOutline } from "react-icons/md";
+
 
 function Experience() {
   return (
@@ -10,7 +11,7 @@ function Experience() {
       <div className="w-full">
         <div className="flex justify-center items-center mb-8">
           <h4 className="text-4xl dark:text-white font-bold flex gap-2 items-center">
-            <FaBuildingUser className="text-4xl text-red-800 dark:text-red-500" />
+            <MdOutlineWorkOutline className="text-5xl text-red-800 dark:text-red-500" />
             Experience
           </h4>
         </div>

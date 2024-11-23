@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FiExternalLink } from "react-icons/fi";
+import { PiCertificateLight } from "react-icons/pi";
 import user_info from "../../data/user_info";
 
 function Certificates() {
@@ -21,9 +22,12 @@ function Certificates() {
       id="certificates"
       className="flex flex-col items-center py-8 px-4 "
     >
-      <h4 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">
-        Certificates
-      </h4>
+      <div className="flex justify-center items-center">
+          <h4 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">
+            <PiCertificateLight className="text-5xl text-red-800 dark:text-red-500" />
+            Certificates and Achivements
+          </h4>
+        </div>
 
       <div className="relative w-full max-w-7xl overflow-hidden">
         <div className="relative flex items-center justify-center w-full h-52 sm:h-64 lg:h-80 shadow-lg rounded-md">
@@ -47,7 +51,7 @@ function Certificates() {
                 className="mt-4 flex items-center gap-2 text-red-800 dark:text-red-500 hover:underline"
               >
                 <FiExternalLink className="text-lg" />
-                <span>View Certificate</span>
+                <span>View</span>
               </a>
             </div>
           ))}

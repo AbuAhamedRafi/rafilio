@@ -1,5 +1,6 @@
 import user_info from "../../data/user_info.js";
 import Project from "../Project.jsx";
+import { BiTask } from "react-icons/bi";
 
 function Projects() {
   return (
@@ -7,9 +8,12 @@ function Projects() {
       id="projects"
       className="md:h-screen min-h-screen flex flex-col justify-center items-center py-8"
     >
-      <h2 className="text-4xl font-bold text-zinc-800 dark:text-white">
-        Projects
-      </h2>
+      <div className="flex justify-center items-center">
+        <h2 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">
+          <BiTask className="text-4xl text-red-800 dark:text-red-500" />
+          Projects
+        </h2>
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:px-16 py-8">
         {user_info.projects.map((project, index) => {

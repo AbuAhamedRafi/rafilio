@@ -1,5 +1,5 @@
 import user_info from "../../data/user_info.js";
-import { FaLandmark } from "react-icons/fa";
+import { GiGraduateCap } from "react-icons/gi";
 
 function Education() {
   return (
@@ -10,7 +10,7 @@ function Education() {
       <div className="w-full">
         <div className="flex justify-center items-center">
           <h4 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">
-            <FaLandmark className="text-4xl text-red-800 dark:text-red-500" />
+            <GiGraduateCap className="text-5xl text-red-800 dark:text-red-500" />
             Education
           </h4>
         </div>

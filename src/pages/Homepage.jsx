@@ -10,7 +10,8 @@ import Footer from "../components/sections/Footer.jsx";
 import Experience from "../components/sections/Experience.jsx";
 import Education from "../components/sections/Education.jsx";
 import Skills from "../components/sections/Skills.jsx";
-import Certifications from "../components/sections/Certifications.jsx";
+import Certifications from "../components/sections/Certifications.jsx"
+import Resume from "../components/sections/Resume.jsx";
 
 function Homepage() {
   const { theme, switchTheme } = useContext(AppContext);
@@ -30,6 +31,7 @@ function Homepage() {
         <Experience />
         <Certifications />
         <Skills />
+        <Resume/>
         <Contact />
 
         <hr className="mt-12 border border-zinc-300 dark:border-zinc-800" />
