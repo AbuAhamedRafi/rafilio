@@ -3,7 +3,7 @@ import user_info from "../../data/user_info.js";
 function Hero() {
   return (
     <>
-      <section id="hero" className="md:min-h-screen flex px-6 lg:px-24">
+      <section id="hero" className="scroll-mt-16 md:min-h-screen flex px-6 lg:px-24">
         <div className="self-center w-full">
           <div className="w-full text-zinc-900 dark:text-zinc-100 px-4 sm:px-6 flex flex-col md:grid md:grid-cols-3 items-center gap-10">
             <div className="md:col-span-1 order-1 md:order-2 flex justify-center w-1/2 md:w-full mt-10 md:mt-0">

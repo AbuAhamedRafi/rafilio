@@ -49,7 +49,7 @@ const info = {
 			description: "Created a simple vote app backend to learn and implement Rest API in Laravel.",
 			technologies: "Laravel, PHP , Rest API",
 			github: "https://github.com/AbuAhamedRafi/VoteApp_backend",
-            // link: "https://sudoku-solver-sa.netlify.app/"
+            // link: ""
 		},
     ],
 
@@ -57,8 +57,8 @@ const info = {
     education: [
         {
             school: "Independent University, Bangladesh",
-            degree: "Bachelor of Science in Computer Science",
-            duration: "Sep 2019 - Sep 2024",
+            degree: "Bachelor of Science in Computer Science and Engineering",
+            duration: "2019 - 2024",
             image: "iub.jpg"
         },
         {
@@ -70,7 +70,7 @@ const info = {
         {
             school: "Dinajpur Zilla School",
             degree: "Secondary School Certificate",
-            duration: "2015 - 2017",
+            duration: "2007 - 2015",
             image: "dzs.png"
         }
     ],
@@ -78,7 +78,7 @@ const info = {
     // ============ EXPERIENCE ============
     experience: [
         {
-            position: "Junior Software Engineer (Part Time)",
+            position: "Junior Software Engineer",
             company: "Computer Services Limited",
             duration: "Aug 2024 - Present",
             image: "csl.jpeg",

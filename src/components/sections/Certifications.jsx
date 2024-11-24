@@ -20,7 +20,7 @@ function Certificates() {
   return (
     <section
       id="certificates"
-      className="flex flex-col items-center py-8 px-4 "
+      className="scroll-mt-16 flex flex-col items-center text-center py-16 px-6 bg-gradient-to-r"
     >
       <div className="flex justify-center items-center">
           <h4 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">

@@ -6,7 +6,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="md:h-screen min-h-screen flex flex-col justify-center items-center py-8"
+      className="scroll-mt-16 md:h-screen min-h-screen flex flex-col justify-center items-center py-8"
     >
       <div className="flex justify-center items-center">
         <h2 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">

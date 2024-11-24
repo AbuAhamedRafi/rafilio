@@ -6,7 +6,7 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="mx-4 lg:mx-20 flex items-center h-auto py-10"
+      className="scroll-mt-16 flex flex-col items-center text-center py-16 px-6 bg-gradient-to-r"
     >
       <div className="w-full">
         <div className="flex justify-center items-center mb-8">

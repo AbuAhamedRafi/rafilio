@@ -3,7 +3,7 @@ import { SiGithub } from "react-icons/si";
 
 function Project({ title, description, technologies, link, github }) {
   return (
-    <div className=" transition-transform duration-500 hover:scale-105 p-3 md:rounded-xl">
+    <div className="shadow-lg transition-transform duration-500 hover:scale-105 p-3 md:rounded-xl">
       <div className="flex gap-2 overflow-x-scroll py-2">
         {technologies.split(",").map((tech, index) => (
           <span
@@ -14,7 +14,7 @@ function Project({ title, description, technologies, link, github }) {
           </span>
         ))}
       </div>
-      <h3 className="font-bold text-lg text-zinc-700 dark:text-zinc-300 mt-4">
+      <h3 className="font-bold text-xl text-zinc-700 dark:text-zinc-300 mt-4">
         {title}
       </h3>
       <p className="leading-7 text-zinc-500 dark:text-zinc-300 font-light text-base mt-4">
@@ -36,6 +36,7 @@ function Project({ title, description, technologies, link, github }) {
           <span className="text-xs self-center">View Github</span>
         </a>
       </div>
+      <div className="mt-4 h-[1px] bg-zinc-200 dark:bg-zinc-700"></div>
     </div>
   );
 }
