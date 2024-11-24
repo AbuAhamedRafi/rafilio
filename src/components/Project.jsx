@@ -3,7 +3,7 @@ import { SiGithub } from "react-icons/si";
 
 function Project({ title, description, technologies, link, github }) {
   return (
-    <div className=" hover:bg-zinc-100 hover:dark:bg-zinc-900 transition-all duration-300 p-3 md:rounded-xl">
+    <div className=" transition-transform duration-500 hover:scale-105 p-3 md:rounded-xl">
       <div className="flex gap-2 overflow-x-scroll py-2">
         {technologies.split(",").map((tech, index) => (
           <span

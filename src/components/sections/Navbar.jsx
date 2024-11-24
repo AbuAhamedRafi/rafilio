@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { CgDarkMode } from "react-icons/cg";
 import { IoIosArrowForward } from "react-icons/io";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 function Navbar({ switchTheme }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,11 +43,11 @@ function Navbar({ switchTheme }) {
 
         <div className="lg:hidden flex items-center">
           <button
-            className="text-zinc-700 dark:text-white hover:text-red-800 dark:hover:text-red-500 transition-all duration-300"
+            className="text-3xl text-zinc-700 dark:text-white hover:text-red-800 dark:hover:text-red-500 transition-all duration-300"
             aria-label="Open Menu"
             onClick={toggleMenu}
           >
-            ☰
+            {isMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
           </button>
         </div>
 
@@ -60,40 +62,47 @@ function Navbar({ switchTheme }) {
         </div>
       </div>
 
-      {isMenuOpen && (
-        <div className="absolute top-full left-0 w-full bg-zinc-100 dark:bg-zinc-900 shadow-lg z-10">
-          <nav className="flex flex-col gap-4 p-6">
-            {[
-              { href: "#projects", label: "Projects" },
-              { href: "#education", label: "Education" },
-              { href: "#experience", label: "Experience" },
-              { href: "#certificates", label: "Certifications" },
-              { href: "#resume", label: "Resume" },
-              { href: "#contact", label: "Contact" },
-            ].map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                className="flex gap-2 hover:gap-3 items-center transition-all duration-300
-                  text-zinc-700 hover:text-red-800 dark:text-white dark:hover:text-red-500"
-              >
-                <span className="font-medium">{item.label}</span>
-                <IoIosArrowForward />
-              </a>
-            ))}
-          </nav>
-
+      <motion.div
+        initial={{ height: 0 }}
+        animate={{ height: isMenuOpen ? "auto" : 0 }}
+        transition={{ duration: 0.3 }}
+        className={`overflow-hidden shadow-lg  z-10`}
+      >
+        {isMenuOpen && (
           <div className="p-6">
-            <button
-              onClick={switchTheme}
-              className="text-2xl text-zinc-500 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-red-500 transition-all duration-300"
-              aria-label="Dark Mode Button"
-            >
-              <CgDarkMode />
-            </button>
+            <nav className="flex flex-col gap-4">
+              {[
+                { href: "#projects", label: "Projects" },
+                { href: "#education", label: "Education" },
+                { href: "#experience", label: "Experience" },
+                { href: "#certificates", label: "Certifications" },
+                { href: "#resume", label: "Resume" },
+                { href: "#contact", label: "Contact" },
+              ].map((item, index) => (
+                <a
+                  key={index}
+                  href={item.href}
+                  className="flex gap-2 hover:gap-3 items-center transition-all duration-300
+                    text-zinc-700 hover:text-red-800 dark:text-white dark:hover:text-red-500"
+                >
+                  <span className="font-medium">{item.label}</span>
+                  <IoIosArrowForward />
+                </a>
+              ))}
+            </nav>
+
+            <div className="mt-4">
+              <button
+                onClick={switchTheme}
+                className="text-2xl text-zinc-500 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-red-500 transition-all duration-300"
+                aria-label="Dark Mode Button"
+              >
+                <CgDarkMode />
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </motion.div>
     </div>
   );
 }

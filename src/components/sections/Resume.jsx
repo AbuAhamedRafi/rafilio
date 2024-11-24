@@ -1,5 +1,5 @@
 import { RxResume } from "react-icons/rx";
-import { LiaFileDownloadSolid } from "react-icons/lia";
+import { GrDocumentDownload } from "react-icons/gr";
 import user_info from "../../data/user_info.js";
 
 function Resume() {
@@ -30,7 +30,7 @@ function Resume() {
         className="flex gap-2 hover:gap-3 items-center transition-all duration-300
                 text-zinc-700 hover:text-red-800 dark:text-white dark:hover:text-red-500"
       >
-        <LiaFileDownloadSolid className="text-2xl" />
+        <GrDocumentDownload className="text-2xl text-red-800 dark:text-red-500" />
         <span>Download Resume</span>
       </button>
     </section>

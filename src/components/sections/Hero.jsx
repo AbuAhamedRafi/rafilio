@@ -14,11 +14,10 @@ function Hero() {
               />
             </div>
 
-            <div className="md:col-span-2 order-2 md:order-1 text-center md:text-left">
+            <div className="md:col-span-2 order-2 md:order-1 text-center md:text-left transition-transform duration-500 hover:scale-105">
               <div>
                 <h1
-                  className="font-black mt-3 text-4xl sm:text-5xl md:text-6xl max-w-full
-                  transition-transform duration-500 hover:scale-105"
+                  className="font-black mt-3 text-4xl sm:text-5xl md:text-6xl max-w-full"
                 >
                   {user_info.main.name}
                 </h1>

@@ -31,7 +31,7 @@ function Experience() {
               <div
                 className={`absolute w-6 h-6 bg-red-800 dark:bg-red-500 rounded-full transform -translate-x-1/2 top-0 left-1/2`}
               >
-                <div className="w-3 h-3 bg-white dark:bg-zinc-800 rounded-full m-auto mt-1.5"></div>
+                <div className="w-3 h-3 bg-white dark:bg-zinc-100 rounded-full m-auto mt-1.5"></div>
               </div>
 
               <div
