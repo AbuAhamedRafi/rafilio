@@ -138,7 +138,7 @@ const info = {
     // ============ RESUME ============
     resume: {
         description: "You can download the last updated version of my Resume",
-        resumeLink: "/public/Abu Ahamed Rafi.pdf"
+        resumeLink: "/Abu Ahamed Rafi.pdf"
       },
 
     // ============ CONTACT ============
