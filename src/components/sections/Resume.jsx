@@ -5,7 +5,7 @@ import user_info from "../../data/user_info.js";
 function Resume() {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = user_info.resume.resumeLink;
+    link.href = user_info.resume.resumeLink;  
     link.setAttribute("download", "Abu_Ahamed_Rafi.pdf");
     link.click();
   };

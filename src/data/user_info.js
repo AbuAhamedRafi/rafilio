@@ -20,6 +20,13 @@ const info = {
     // ============ PROJECTS ============
     projects: [
         {
+			title: "Portfolio Website",
+			description: "Created my own portfolio website using React and Tailwind CSS.",
+			technologies: "React, Tailwind, Github Pages(With custom domain)",
+			github: "https://github.com/AbuAhamedRafi/VoteApp_backend",
+            link: "abuahamedrafi.me"
+		},
+        {
 			title: "Frame Generator",
 			description: "A web application that allows users to upload an image and add a customized banner (frame) to it.",
             technologies: "Laravel, Tailwind",
@@ -131,7 +138,7 @@ const info = {
     // ============ RESUME ============
     resume: {
         description: "You can download the last updated version of my Resume",
-        resumeLink: "/path/to/your/resume.pdf",
+        resumeLink: "/public/Abu Ahamed Rafi.pdf"
       },
 
     // ============ CONTACT ============
