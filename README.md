@@ -1,4 +1,3 @@
-```markdown
 # Rafilio - My Very Own Portfolio Website 🌟
 
 **A modern, sleek, and fully customizable portfolio to showcase your skills, projects, and achievements.**
