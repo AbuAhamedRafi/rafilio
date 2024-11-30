@@ -36,7 +36,6 @@ function Navbar({ switchTheme }) {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-
   return (
     <div
       className={`sticky top-0 z-50 transition-all duration-300 ${
@@ -48,11 +47,13 @@ function Navbar({ switchTheme }) {
       <div className="relative w-full px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img
-              className="rounded-4xl hover:shadow-xl transform transition-all duration-300 hover:scale-110"
-              src="/favicon.png"
-              alt="App Icon"
-            />
+            <a href="/">
+              <img
+                className="rounded-4xl hover:shadow-xl transform transition-all duration-300 hover:scale-110"
+                src="/favicon.png"
+                alt="App Icon"
+              />
+            </a>
           </div>
 
           <nav className="hidden lg:flex gap-8">
@@ -85,7 +86,6 @@ function Navbar({ switchTheme }) {
               {isMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
             </button>
           </div>
-
 
           <div className="hidden lg:block">
             <button

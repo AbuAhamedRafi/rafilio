@@ -2,7 +2,6 @@ import user_info from "../../data/user_info.js";
 
 function Hero() {
   return (
-    <>
       <section id="hero" className="scroll-mt-16 md:min-h-screen flex px-6 lg:px-24">
         <div className="self-center w-full">
           <div className="w-full text-zinc-900 dark:text-zinc-100 px-4 sm:px-6 flex flex-col md:grid md:grid-cols-3 items-center gap-10">
@@ -32,7 +31,6 @@ function Hero() {
           </div>
         </div>
       </section>
-    </>
   );
 }
 
