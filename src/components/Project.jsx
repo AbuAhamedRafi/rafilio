@@ -1,4 +1,4 @@
-// import { CiLink } from "react-icons/ci";
+import { CiLink } from "react-icons/ci";
 import { SiGithub } from "react-icons/si";
 
 function Project({ title, description, technologies, link, github }) {
@@ -22,19 +22,24 @@ function Project({ title, description, technologies, link, github }) {
       </p>
 
       <div className="flex gap-6 text-zinc-600 dark:text-zinc-300 font-medium">
-        {/* <a href={link} className="flex gap-2 mt-4 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300">
-          <CiLink className="text-2xl self-center" />
-          <span className="text-xs self-center">
-            View Project
-          </span>
-        </a> */}
-        <a
-          href={github}
-          className="flex gap-2 mt-4 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300"
-        >
-          <SiGithub  className="text-2xl self-center" />
-          <span className="text-xs self-center">View Github</span>
-        </a>
+        {link && (
+          <a
+            href={link}
+            className="flex gap-2 mt-4 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300"
+          >
+            <CiLink className="text-2xl self-center" />
+            <span className="text-xs self-center">View Project</span>
+          </a>
+        )}
+        {github && (
+          <a
+            href={github}
+            className="flex gap-2 mt-4 hover:text-red-800 hover:dark:text-red-500 cursor-pointer transition-all duration-300"
+          >
+            <SiGithub className="text-2xl self-center" />
+            <span className="text-xs self-center">View Github</span>
+          </a>
+        )}
       </div>
       <div className="mt-4 h-[1px] bg-zinc-200 dark:bg-zinc-700"></div>
     </div>

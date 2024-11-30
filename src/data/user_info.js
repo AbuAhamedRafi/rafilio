@@ -2,7 +2,7 @@ const info = {
     // ============ MAIN DETAILS ============
     main: {
         name: "Abu Ahamed Rafi",
-        description: "I am a software engineer with expertise in backend web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
+        description: "I am a software engineer with expertise in backend web development. I have experience in building scalable, secure and reliable web applications using frameworks and technologies like Laravel and React. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
         role: "Software Engineer",
         photo: "../photo.jpg",
         email: "abuahamedrafi@gmail.com",
@@ -21,10 +21,10 @@ const info = {
     projects: [
         {
 			title: "Portfolio Website",
-			description: "Created my own portfolio website using React and Tailwind CSS.",
+			description: "This is a web app with image cropping, resizing, and overlay features using Fabric.js and Blade, allowing users to customize and download. Added an admin dashboard with Filament PHP to manage frames and track downloads, overcoming the challenge of learning Filament from scratch through tutorials and documentation. faced a steep learning curve with the integration but successfully implemented it through extensive research",
 			technologies: "React, Tailwind, Github Pages(With custom domain)",
-			github: "https://github.com/AbuAhamedRafi/VoteApp_backend",
-            link: "abuahamedrafi.me"
+			github: "https://github.com/AbuAhamedRafi/rafilio",
+            link: "https://abuahamedrafi.me"
 		},
         {
 			title: "Frame Generator",
@@ -90,9 +90,9 @@ const info = {
             duration: "Aug 2024 - Present",
             image: "csl.jpeg",
             descriptions: [
-                "Completed an extensive training program in full-stack web development.",
-                "Actively contributed to the ongoing development of a web application.",
-                "Mentored by senior developers on best practices and code optimization.",
+                "Improved project delivery speed by using Laravel optmizations and several packages.",
+                "Contributed to the development and maintenance using Laravel and REST APIs, enhancing skills in full-stack development.",
+                "Mentored by senior developer on best practices and code optimization.",
             ]
         },
         {
@@ -102,8 +102,8 @@ const info = {
             image: "csl.jpeg",
             descriptions: [
                 "Learned Laravel Framework and React Basics",
-                "Contributed to backend development and enhancing project functionality.",
-                "Created interactive dashboards in Tableau for performance tracking and reporting."
+                "Gained knowledge and expertise in web development, database management, and API integration for seamless performance.",
+                "Created interactive dashboards for performance tracking and reporting."
             ]
         },
         {

@@ -36,6 +36,7 @@ function Navbar({ switchTheme }) {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+
   return (
     <div
       className={`sticky top-0 z-50 transition-all duration-300 ${
