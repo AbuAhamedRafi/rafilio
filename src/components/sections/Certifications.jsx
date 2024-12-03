@@ -22,50 +22,79 @@ function Certificates() {
       id="certificates"
       className="scroll-mt-16 flex flex-col items-center text-center py-16 px-6 bg-gradient-to-r"
     >
-      <div className="flex justify-center items-center">
-          <h4 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">
-            <PiCertificateLight className="text-5xl text-red-800 dark:text-red-500" />
-            Certificates and Achivements
-          </h4>
-        </div>
+      <div className="flex flex-col items-center gap-2 mb-8">
+        <PiCertificateLight className="text-6xl text-red-800 dark:text-red-500 animate-spin-slow" />
+        <h4 className="text-4xl sm:text-5xl font-extrabold text-gray-800 dark:text-white">
+          Certificates & Achievements
+        </h4>
+        <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 mt-2">
+          Here are some of the certifications and milestones I have achieved.
+        </p>
+      </div>
 
-      <div className="relative w-full max-w-7xl overflow-hidden">
-        <div className="relative flex items-center justify-center w-full h-52 sm:h-64 lg:h-80 shadow-lg rounded-md">
+      <div className="relative w-full max-w-5xl overflow-hidden rounded-xl shadow-lg">
+        <div className="relative flex items-center justify-center w-full h-80 sm:h-96 bg-white dark:bg-zinc-950 transition-transform duration-900">
           {certificates.map((cert, index) => (
             <div
               key={index}
-              className={`absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center transition-opacity duration-700 ${
-                index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+              className={`absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center transition-all duration-1000 transform ${
+                index === currentIndex
+                  ? "opacity-100 scale-100 z-10"
+                  : "opacity-0 scale-90 z-0"
               }`}
             >
-              <h5 className="text-lg lg:text-xl font-semibold text-gray-800 dark:text-white text-center px-4">
+              <h5 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 {cert.title}
               </h5>
-              <p className="text-sm lg:text-base text-gray-600 dark:text-gray-400 text-center mt-2 px-4">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 px-6 sm:px-10">
                 {cert.description}
               </p>
               <a
                 href={cert.link}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-4 flex items-center gap-2 text-red-800 dark:text-red-500 hover:underline"
+                className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-red-800 dark:bg-red-500 text-white rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-transform"
               >
                 <FiExternalLink className="text-lg" />
-                <span>View</span>
+                <span>View Certificate</span>
               </a>
             </div>
           ))}
         </div>
+
+        {certificates.length > 1 && (
+          <>
+            <button
+              onClick={() =>
+                setCurrentIndex(
+                  (prevIndex) =>
+                    (prevIndex - 1 + certificates.length) % certificates.length
+                )
+              }
+              className="absolute left-3 top-1/2 -translate-y-1/2 p-3 rounded-full bg-red-800 dark:bg-red-500 text-white shadow-lg hover:bg-red-600 z-20 transition-all"
+            >
+              &#8249;
+            </button>
+            <button
+              onClick={() =>
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % certificates.length)
+              }
+              className="absolute right-3 top-1/2 -translate-y-1/2 p-3 rounded-full bg-red-800 dark:bg-red-500 text-white shadow-lg hover:bg-red-600 z-20 transition-all"
+            >
+              &#8250;
+            </button>
+          </>
+        )}
       </div>
 
-      <div className="flex space-x-2 mt-4">
+      <div className="flex space-x-3 mt-6">
         {certificates.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full ${
+            className={`w-4 h-4 rounded-full transition-all ${
               currentIndex === index
-                ? "bg-red-800 dark:bg-red-500"
+                ? "bg-red-800 dark:bg-red-500 scale-150 shadow-md"
                 : "bg-gray-300 dark:bg-gray-600"
             }`}
           />

@@ -21,7 +21,7 @@ const info = {
     projects: [
         {
 			title: "Portfolio Website",
-			description: "This is a web app with image cropping, resizing, and overlay features using Fabric.js and Blade, allowing users to customize and download. Added an admin dashboard with Filament PHP to manage frames and track downloads, overcoming the challenge of learning Filament from scratch through tutorials and documentation. faced a steep learning curve with the integration but successfully implemented it through extensive research",
+			description: "My Very own Portfolio Website. I also used it to learn React Framework.",
 			technologies: "React, Tailwind, Github Pages(With custom domain)",
 			github: "https://github.com/AbuAhamedRafi/rafilio",
             link: "https://abuahamedrafi.me"
@@ -129,8 +129,8 @@ const info = {
         {
             title: "Software Engineer - Internship",
             description: "Provided by Computer Services Limited",
-            icon: "",
-            link: "",
+            icon: "CSL",
+            link: "https://drive.google.com/file/d/1llW-cmzxwPS8eY_SoohtU54w8TkLKW7F/view?usp=drive_link",
         },
         
     ],

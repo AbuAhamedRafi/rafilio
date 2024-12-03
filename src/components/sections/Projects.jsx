@@ -1,6 +1,7 @@
 import user_info from "../../data/user_info.js";
 import Project from "../Project.jsx";
 import { BiTask } from "react-icons/bi";
+import Fade from "../Fade.jsx";
 
 function Projects() {
   return (
@@ -15,20 +16,22 @@ function Projects() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:px-16 py-8">
-        {user_info.projects.map((project, index) => {
-          return (
-            <Project
-              key={index}
-              title={project.title}
-              description={project.description}
-              technologies={project.technologies}
-              github={project.github}
-              link={project.link}
-            />
-          );
-        })}
-      </div>
+      <Fade>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:px-16 py-8">
+          {user_info.projects.map((project, index) => {
+            return (
+              <Project
+                key={index}
+                title={project.title}
+                description={project.description}
+                technologies={project.technologies}
+                github={project.github}
+                link={project.link}
+              />
+            );
+          })}
+        </div>
+      </Fade>
     </section>
   );
 }
