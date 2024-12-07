@@ -27,8 +27,8 @@ const info = {
             link: "https://abuahamedrafi.me"
 		},
         {
-			title: "Frame Generator",
-			description: "A web application that allows users to upload an image and add a customized banner (frame) to it.",
+			title: "Frame Fit",
+			description: "Developed a web application with features including image cropping, resizing, and overlay customization using Fabric.js and Blade, allowing users to personalize and download framed images. Integrated an admin dashboard built with Filament PHP to manage frames and monitor download metrics effectively.",
             technologies: "Laravel, Tailwind",
 			github: "https://github.com/AbuAhamedRafi/Frame-App",
             // link: ""
@@ -36,8 +36,8 @@ const info = {
 
         {
 			title: "Draw & Classify",
-			description: "Draw & Classify is a web application designed to test my machine learning model, which classifies drawn letters, digits, or shapes.",
-			technologies: "React, Tailwind, Tensorflow",
+			description: "Designed and deployed a web application that utilizes machine learning models to classify hand-drawn letters, digits, and shapes in real time. Integrated TensorFlow.js for seamless browser-based inference, enabling users to interact with the model without server-side processing.",
+            technologies: "",
 			github: "https://github.com/AbuAhamedRafi/Classify-Shapes",
             // link: ""
 		},
@@ -53,7 +53,7 @@ const info = {
         
 		{
 			title: "Vote App - Backend",
-			description: "Created a simple vote app backend to learn and implement Rest API in Laravel.",
+			description: "Developed a dynamic voting API backend with Laravel, supporting real-time vote updates and seamlesscategory-based voting with customizable options. Implemented API security measures, including HTTPS, JWT (JSON Web Tokens) authentication. Tested endpoints using Postman and integrated tools for API debugging and validation.",
 			technologies: "Laravel, PHP , Rest API",
 			github: "https://github.com/AbuAhamedRafi/VoteApp_backend",
             // link: ""
@@ -85,7 +85,7 @@ const info = {
     // ============ EXPERIENCE ============
     experience: [
         {
-            position: "Junior Software Engineer",
+            position: "Trainee Software Engineer",
             company: "Computer Services Limited",
             duration: "Aug 2024 - Present",
             image: "csl.jpeg",
@@ -101,7 +101,7 @@ const info = {
             duration: "Feb 2024 - Jul 2024",
             image: "csl.jpeg",
             descriptions: [
-                "Learned Laravel Framework and React Basics",
+                "Learned Laravel MVC and React Basics",
                 "Gained knowledge and expertise in web development, database management, and API integration for seamless performance.",
                 "Created interactive dashboards for performance tracking and reporting."
             ]

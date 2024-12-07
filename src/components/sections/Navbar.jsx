@@ -76,7 +76,7 @@ function Navbar({ switchTheme }) {
               </a>
             ))}
           </nav>
-
+          
           <div className="lg:hidden flex items-center">
             <button
               className="text-3xl text-zinc-700 dark:text-white hover:text-red-800 dark:hover:text-red-500 transition-all duration-300"
