@@ -26,19 +26,20 @@ const info = {
 			github: "https://github.com/AbuAhamedRafi/rafilio",
             link: "https://abuahamedrafi.me"
 		},
+
         {
-			title: "Frame Fit",
-			description: "Developed a web application with features including image cropping, resizing, and overlay customization using Fabric.js and Blade, allowing users to personalize and download framed images. Integrated an admin dashboard built with Filament PHP to manage frames and monitor download metrics effectively.",
-            technologies: "Laravel, Tailwind",
-			github: "https://github.com/AbuAhamedRafi/Frame-App",
-            // link: ""
+			title: "Classify Shapes",
+			description: "This web app uses machine learning to classify hand-drawn letters, digits, and shapes in real-time. It leverages TensorFlow.js for browser-based inference, allowing users to interact with the model directly in their browser.",
+            technologies: "Vite App, Tensorflow models, JavaScript",
+			github: "https://github.com/AbuAhamedRafi/Classify-Shapes",
+            link: "https://classifyshapes.vercel.app/"
 		},
 
         {
-			title: "Draw & Classify",
-			description: "Designed and deployed a web application that utilizes machine learning models to classify hand-drawn letters, digits, and shapes in real time. Integrated TensorFlow.js for seamless browser-based inference, enabling users to interact with the model without server-side processing.",
-            technologies: "",
-			github: "https://github.com/AbuAhamedRafi/Classify-Shapes",
+			title: "Frame Fit",
+			description: "Developed a web application with features including image cropping, resizing, and overlay customization using Fabric.js and Blade, allowing users to personalize and download framed images. Integrated an admin dashboard built with Filament PHP to manage frames and monitor download metrics effectively.",
+            technologies: "Laravel with Blade, Tailwind",
+			github: "https://github.com/AbuAhamedRafi/Frame-App",
             // link: ""
 		},
 

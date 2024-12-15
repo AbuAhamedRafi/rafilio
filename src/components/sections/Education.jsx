@@ -9,7 +9,7 @@ function Education() {
     >
       <div className="w-full">
         <div className="flex justify-center items-center">
-          <h4 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">
+          <h4 className="text-4xl dark:text-white mb-4 font-extrabold flex gap-2 items-center">
             <GiGraduateCap className="text-5xl text-red-800 dark:text-red-500" />
             Education
           </h4>

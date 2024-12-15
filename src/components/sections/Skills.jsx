@@ -22,7 +22,7 @@ function Skills() {
     <section id="skills" className="mx-4 lg:mx-20 mt-8 mb-8">
       <div className="flex justify-center items-center">
           <h4 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">
-            <GrTechnology className="text-4xl text-red-800 dark:text-red-500" />
+            <GrTechnology className="text-4xl font-extrabold text-red-800 dark:text-red-500" />
             Technologies I Use
           </h4>
         </div>

@@ -1,7 +1,6 @@
 import user_info from "../../data/user_info.js";
 import { MdOutlineWorkOutline } from "react-icons/md";
 
-
 function Experience() {
   return (
     <section
@@ -10,7 +9,7 @@ function Experience() {
     >
       <div className="w-full">
         <div className="flex justify-center items-center mb-8">
-          <h4 className="text-4xl dark:text-white font-bold flex gap-2 items-center">
+          <h4 className="text-4xl dark:text-white font-extrabold flex gap-2 items-center">
             <MdOutlineWorkOutline className="text-5xl text-red-800 dark:text-red-500" />
             Experience
           </h4>
