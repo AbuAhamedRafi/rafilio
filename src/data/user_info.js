@@ -45,9 +45,9 @@ const info = {
 
         {
 			title: "Ark Power Website",
-			description: "Worked on the Authentication(Breeze), Role Management(Spatie), Email Verification and more. Also, Implemented a dynamic dashboard using Filament PHP with easy to add contents, images, and videos.",
+			description: "First Live Project. Worked on the Authentication(Breeze), Role Management(Spatie), Email Verification and more. Also, Implemented a dynamic dashboard using Filament PHP with easy to add contents, images, and videos.",
 			technologies: "Livewire, Laravel with Blade",
-			github: "NDA",
+			github: "NDA - (CSL)",
             link: "https://arkpowerltd.com.bd/"
 		},
 
