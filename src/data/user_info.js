@@ -44,11 +44,11 @@ const info = {
 		},
 
         {
-			title: "Inventory Management System",
-			description: "Developed an Inventory Management System for Computer Services Limited.",
-			technologies: "Livewire, Laravel",
-			github: "https://github.com/AbuAhamedRafi/CSL-Inventory-_Management",
-            // link: ""
+			title: "Ark Power Website",
+			description: "Worked on the Authentication(Breeze), Role Management(Spatie), Email Verification and more. Also, Implemented a dynamic dashboard using Filament PHP with easy to add contents, images, and videos.",
+			technologies: "Livewire, Laravel with Blade",
+			github: "NDA",
+            link: "https://arkpowerltd.com.bd/"
 		},
 
         
