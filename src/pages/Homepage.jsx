@@ -1,6 +1,6 @@
 import { AppContext } from "../App.jsx";
-import { useContext, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useContext } from "react";
+// import { useLocation } from "react-router-dom";
 
 import Navbar from "../components/sections/Navbar.jsx";
 import Hero from "../components/sections/Hero.jsx";
@@ -15,11 +15,11 @@ import Resume from "../components/sections/Resume.jsx";
 
 function Homepage() {
   const { theme, switchTheme } = useContext(AppContext);
-  const location = useLocation();
+  // const location = useLocation();
 
-  useEffect(() => {
-    window.HSStaticMethods.autoInit();
-  }, [location.pathname]);
+  // useEffect(() => {
+  //   window.HSStaticMethods.autoInit();
+  // }, [location.pathname]);
 
   return (
     <div className="bg-zinc-100 dark:bg-zinc-900">
@@ -33,8 +33,7 @@ function Homepage() {
         <Skills />
         <Resume/>
         <Contact />
-
-        <hr className="mt-12 border border-zinc-300 dark:border-zinc-800" />
+        {/* <hr className="mt-12 border border-zinc-300 dark:border-zinc-800" /> */}
         <Footer theme={theme} />
       </div>
     </div>

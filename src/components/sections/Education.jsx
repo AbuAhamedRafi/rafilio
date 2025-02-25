@@ -19,7 +19,7 @@ function Education() {
           return (
             <div
               key={index}
-              className="shadow-lg rounded-xl p-4 mb-4 mx-auto transition-transform duration-300 hover:scale-105"
+              className="shadow-lg rounded-xl p-4 mb-4 mx-auto transition-transform duration-300"
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
                 <div className="flex items-center gap-4 w-full md:w-1/3">

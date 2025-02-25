@@ -21,11 +21,11 @@ function Skills() {
   return (
     <section id="skills" className="mx-4 lg:mx-20 mt-8 mb-8">
       <div className="flex justify-center items-center">
-          <h4 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">
-            <GrTechnology className="text-4xl font-extrabold text-red-800 dark:text-red-500" />
-            Technologies I Use
-          </h4>
-        </div>
+        <h4 className="text-4xl dark:text-white mb-4 font-bold flex gap-2 items-center">
+          <GrTechnology className="text-4xl font-extrabold text-red-800 dark:text-red-500" />
+          Technologies I Use
+        </h4>
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 mt-8">
         <span className="inline-flex items-center justify-between gap-x-2 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">

@@ -12,7 +12,7 @@ function Footer() {
   return (
     <footer className="scroll-mt-16 p-4 text-center md:flex justify-between">
       <p className=" text-zinc-600 self-center mt-2 md:mt-0 dark:text-zinc-300 text-sm text-center font-light">
-        {user_info.footer}
+        {user_info.footer.replace("{year}", new Date().getFullYear())}
       </p>
 
       <button

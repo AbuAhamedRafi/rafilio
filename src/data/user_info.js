@@ -86,9 +86,18 @@ const info = {
     // ============ EXPERIENCE ============
     experience: [
         {
+            position: "Software Engineer",
+            company: "JB Connect Ltd.",
+            duration: "March 2025 - Present",
+            image: "jbc.png",
+            descriptions: [
+                "Will work on Backend and Specializing in PHP and Laravel.",
+            ]
+        },
+        {
             position: "Trainee Software Engineer",
             company: "Computer Services Limited",
-            duration: "Aug 2024 - Present",
+            duration: "Aug 2024 - Feb 2025",
             image: "csl.jpeg",
             descriptions: [
                 "Improved project delivery speed by using Laravel optmizations and several packages.",
@@ -149,7 +158,7 @@ const info = {
     },
 
     // ============ FOOTER ============
-    footer: "© 2024 Abu Ahamed Rafi. All Rights Reserved"
+    footer: "© {year} Abu Ahamed Rafi. All Rights Reserved"
 }
 
 export default info;

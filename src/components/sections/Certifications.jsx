@@ -53,7 +53,7 @@ function Certificates() {
                 href={cert.link}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-red-800 dark:bg-red-500 text-white rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-transform"
+                className="mt-6 inline-flex items-center gap-2 px-4 py-2 text-red-800 dark:bg-red-800/30 dark:text-red-500 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-transform"
               >
                 <FiExternalLink className="text-lg" />
                 <span>View Certificate</span>
@@ -71,7 +71,7 @@ function Certificates() {
                     (prevIndex - 1 + certificates.length) % certificates.length
                 )
               }
-              className="absolute left-3 top-1/2 -translate-y-1/2 p-3 rounded-full bg-red-800 dark:bg-red-500 text-white shadow-lg hover:bg-red-600 z-20 transition-all"
+              className="absolute left-3 top-1/2 -translate-y-1/2 p-3 rounded-full bg-red-800 dark:bg-red-800/30 text-white shadow-lg hover:bg-red-600 z-20 transition-all"
             >
               &#8249;
             </button>
@@ -79,7 +79,7 @@ function Certificates() {
               onClick={() =>
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % certificates.length)
               }
-              className="absolute right-3 top-1/2 -translate-y-1/2 p-3 rounded-full bg-red-800 dark:bg-red-500 text-white shadow-lg hover:bg-red-600 z-20 transition-all"
+              className="absolute right-3 top-1/2 -translate-y-1/2 p-3 rounded-full bg-red-800 dark:bg-red-800/30 text-white shadow-lg hover:bg-red-600 z-20 transition-all"
             >
               &#8250;
             </button>
@@ -94,7 +94,7 @@ function Certificates() {
             onClick={() => setCurrentIndex(index)}
             className={`w-4 h-4 rounded-full transition-all ${
               currentIndex === index
-                ? "bg-red-800 dark:bg-red-500 scale-150 shadow-md"
+                ? "bg-red-800 dark:bg-red-800/30 scale-150 shadow-md"
                 : "bg-gray-300 dark:bg-gray-600"
             }`}
           />
