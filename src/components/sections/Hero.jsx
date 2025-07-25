@@ -1,23 +1,10 @@
 import { motion } from "framer-motion";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
-import { useState, useEffect } from "react";
 import user_info from "../../data/user_info.js";
 import { scrollToElement } from "../../utils/helpers.js";
-import { getAssetPath } from "../../utils/assets.js";
-import { LoadingSpinner } from "../Loading.jsx";
+import heroPhoto from "../../../public/photo.jpg";
 
 function Hero() {
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const [imageError, setImageError] = useState(false);
-
-  // Preload the image
-  useEffect(() => {
-    const img = new Image();
-    img.src = getAssetPath(user_info.main.photo);
-    img.onload = () => setImageLoaded(true);
-    img.onerror = () => setImageError(true);
-  }, []);
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -77,32 +64,12 @@ function Hero() {
               <div className="absolute -inset-4 bg-gradient-to-r from-red-600 to-blue-600 rounded-3xl blur opacity-20" />
               <div className="absolute -inset-2 bg-gradient-to-r from-red-500 to-blue-500 rounded-3xl blur opacity-30" />
               
-              {/* Loading placeholder */}
-              {!imageLoaded && !imageError && (
-                <div className="relative rounded-3xl transform rotate-3 w-full max-w-sm md:max-w-full h-80 md:h-96 bg-gradient-to-br from-zinc-200 to-zinc-300 dark:from-zinc-700 dark:to-zinc-800 shadow-2xl flex items-center justify-center">
-                  <LoadingSpinner size="lg" />
-                </div>
-              )}
-              
-              {/* Error placeholder */}
-              {imageError && (
-                <div className="relative rounded-3xl transform rotate-3 w-full max-w-sm md:max-w-full h-80 md:h-96 bg-gradient-to-br from-zinc-200 to-zinc-300 dark:from-zinc-700 dark:to-zinc-800 shadow-2xl flex items-center justify-center">
-                  <div className="text-center text-zinc-500 dark:text-zinc-400">
-                    <p>Image failed to load</p>
-                  </div>
-                </div>
-              )}
-              
-              {/* Actual image */}
+              {/* Image */}
               <img
-                className={`relative rounded-3xl transform rotate-3 w-full max-w-sm md:max-w-full shadow-2xl hover:rotate-0 transition-all duration-500 ${
-                  imageLoaded ? 'opacity-100' : 'opacity-0 absolute top-0 left-0'
-                }`}
-                src={getAssetPath(user_info.main.photo)}
+                className="relative rounded-3xl transform rotate-3 w-full max-w-sm md:max-w-full shadow-2xl hover:rotate-0 transition-transform duration-500"
+                src={heroPhoto}
                 alt={`${user_info.main.name} - ${user_info.main.role}`}
                 loading="eager"
-                onLoad={() => setImageLoaded(true)}
-                onError={() => setImageError(true)}
               />
             </div>
           </motion.div>
