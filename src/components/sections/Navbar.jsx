@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "../../hooks/useTheme";
 import { scrollToElement } from "../../utils/helpers";
 import { cn } from "../../utils/cn";
+import { getAssetPath } from "../../utils/assets.js";
 
 const navigation = [
   { href: "projects", label: "Projects" },
@@ -80,12 +81,9 @@ function Navbar() {
             >
               <img
                 className="w-10 h-10 rounded-full hover:shadow-xl transition-shadow duration-300"
-                src="/favicon.png"
+                src={getAssetPath("favicon.png")}
                 alt="Abu Ahamed Rafi"
               />
-              <span className="hidden sm:block font-bold text-lg text-zinc-900 dark:text-white">
-                Rafi
-              </span>
             </motion.a>
 
             {/* Desktop Navigation */}

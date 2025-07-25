@@ -6,6 +6,7 @@ import {
 } from "@heroicons/react/24/outline";
 import user_info from "../../data/user_info.js";
 import Fade from "../Fade.jsx";
+import { getAssetPath } from "../../utils/assets.js";
 
 function Experience() {
   const containerVariants = {
@@ -154,7 +155,7 @@ function Experience() {
                           <div className="w-16 h-16 bg-gradient-to-br from-zinc-100 to-zinc-200 dark:from-zinc-700 dark:to-zinc-800 rounded-xl p-0.5 shadow-lg">
                             <img
                               className="w-full h-full rounded-lg object-cover"
-                              src={exp.image}
+                              src={getAssetPath(exp.image)}
                               alt={`${exp.company} Logo`}
                             />
                           </div>

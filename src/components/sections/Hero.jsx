@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import user_info from "../../data/user_info.js";
 import { scrollToElement } from "../../utils/helpers.js";
+import { getAssetPath } from "../../utils/assets.js";
 
 function Hero() {
   const containerVariants = {
@@ -65,7 +66,7 @@ function Hero() {
               
               <img
                 className="relative rounded-3xl transform rotate-3 w-full max-w-sm md:max-w-full shadow-2xl hover:rotate-0 transition-transform duration-500"
-                src={user_info.main.photo}
+                src={getAssetPath(user_info.main.photo)}
                 alt={`${user_info.main.name} - ${user_info.main.role}`}
                 loading="eager"
               />

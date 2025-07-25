@@ -4,7 +4,7 @@ const info = {
         name: "Abu Ahamed Rafi",
         description: "I am a software engineer with expertise in backend web development. I have experience in building scalable, secure and reliable web applications using frameworks and technologies like Laravel and React. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
         role: "Software Engineer",
-        photo: "../photo.jpg",
+        photo: "photo.jpg",
         email: "abuahamedrafi@gmail.com",
     },
 
@@ -148,7 +148,7 @@ const info = {
     // ============ RESUME ============
     resume: {
         description: "You can download the last updated version of my Resume",
-        resumeLink: "/Abu Ahamed Rafi.pdf"
+        resumeLink: "Abu Ahamed Rafi.pdf"
       },
 
     // ============ CONTACT ============

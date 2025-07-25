@@ -1,5 +1,6 @@
 import user_info from "../../data/user_info.js";
 import { GiGraduateCap } from "react-icons/gi";
+import { getAssetPath } from "../../utils/assets.js";
 
 function Education() {
   return (
@@ -25,7 +26,7 @@ function Education() {
                 <div className="flex items-center gap-4 w-full md:w-1/3">
                   <img
                     className="w-16 h-16 rounded-full border-2 border-zinc-300 dark:border-zinc-600"
-                    src={edu.image}
+                    src={getAssetPath(edu.image)}
                     alt="School Logo"
                   />
                   <h3 className="text-xl font-semibold text-zinc-800 dark:text-white">

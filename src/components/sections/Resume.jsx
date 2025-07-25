@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import { DocumentTextIcon, ArrowDownTrayIcon, EyeIcon } from "@heroicons/react/24/outline";
 import user_info from "../../data/user_info.js";
 import Fade from "../Fade.jsx";
+import { getAssetPath } from "../../utils/assets.js";
 
 function Resume() {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = user_info.resume.resumeLink;
+    link.href = getAssetPath(user_info.resume.resumeLink);
     link.setAttribute("download", "Abu_Ahamed_Rafi.pdf");
     link.click();
   };
@@ -82,7 +83,7 @@ function Resume() {
                 <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full">
                   <motion.button
                     variants={cardVariants}
-                    onClick={() => window.open(user_info.resume.resumeLink, '_blank')}
+                    onClick={() => window.open(getAssetPath(user_info.resume.resumeLink), '_blank')}
                     className="flex items-center justify-center gap-2 px-6 py-3 rounded-lg text-sm font-medium bg-red-600 text-white hover:bg-red-700 transition-all duration-300 hover:scale-105 flex-1"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
