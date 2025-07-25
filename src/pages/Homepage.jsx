@@ -18,7 +18,7 @@ function Homepage() {
   return (
     <>
       <Helmet>
-        <title>Abu Ahamed Rafi - Software Engineer Portfolio</title>
+        <title>Abu Ahamed Rafi</title>
         <meta name="description" content="Explore the portfolio of Abu Ahamed Rafi, a skilled software engineer specializing in backend development with Laravel and React. View projects, experience, and skills." />
       </Helmet>
 
