@@ -6,7 +6,8 @@ import { MdEmail } from "react-icons/md";
 
 function Contact() {
   return (
-    <section id="contact" className="scroll-mt-16 mt-16 pt-12 px-6 lg:px-24">
+    <section id="contact" className="scroll-mt-16 mt-16 pt-12 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24">
+      <div className="w-full">
       <h4 className="text-5xl font-bold text-zinc-900 dark:text-zinc-100">
         Let&apos;s Get in Touch:{" "}
         <span className="text-red-800 dark:text-red-500">
@@ -70,6 +71,7 @@ function Contact() {
         <MdEmail className="self-center text-lg text-red-800 dark:text-red-500" />
         <span>{user_info.main.email}</span>
       </a>
+      </div>
     </section>
   );
 }

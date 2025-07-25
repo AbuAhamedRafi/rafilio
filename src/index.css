@@ -3,23 +3,77 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Heebo", sans-serif;
-
+  font-family: "Inter", "Heebo", system-ui, -apple-system, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  
+  /* Light theme variables */
+  --toast-bg: #ffffff;
+  --toast-color: #1f2937;
+  --toast-border: #e5e7eb;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
+.dark {
+  /* Dark theme variables */
+  --toast-bg: #1f2937;
+  --toast-color: #f9fafb;
+  --toast-border: #374151;
+}
+
+/* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 1px;
-  height: 1px;
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #991b1b;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #7f1d1d;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #dc2626;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #ef4444;
+}
+
+/* Smooth animations */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Focus styles */
+.focus-visible:focus {
+  outline: 2px solid #991b1b;
+  outline-offset: 2px;
+}
+
+/* Selection styles */
+::selection {
+  background: #991b1b;
+  color: white;
+}
+
+.dark ::selection {
+  background: #dc2626;
+  color: white;
 }

@@ -1,36 +1,39 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Homepage from './pages/Homepage'
-import NotFound from './pages/404'
-import { useEffect, useState } from 'react';
-import { createContext } from 'react';
-// import "preline/preline";
-
-export const AppContext = createContext();
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+import { Toaster } from 'react-hot-toast';
+import { ThemeProvider } from './contexts/ThemeContext';
+import { AppErrorBoundary } from './components/ErrorBoundary';
+import Homepage from './pages/Homepage';
+import NotFound from './pages/404';
 
 function App() {
-	const savedTheme = localStorage.getItem("theme");
-    const [theme, setTheme] = useState(savedTheme || "dark");
-
-	useEffect(() => {
-        document.documentElement.classList.toggle("dark", theme === "dark");
-
-        localStorage.setItem("theme", theme);
-    }, [theme]);
-
-	const switchTheme = () => {
-        setTheme(theme === "dark" ? "light" : "dark");
-    };
-
-	return (
-		<AppContext.Provider value={{ theme, switchTheme }}>
-			<BrowserRouter>
-				<Routes>
-					<Route path="/" element={<Homepage />} />
-					<Route path="*" element={<NotFound />} />
-				</Routes>
-			</BrowserRouter>
-		</AppContext.Provider>
-	)
+  return (
+    <AppErrorBoundary>
+      <HelmetProvider>
+        <ThemeProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            
+            {/* Toast notifications */}
+            <Toaster
+              position="bottom-right"
+              toastOptions={{
+                duration: 4000,
+                style: {
+                  background: 'var(--toast-bg)',
+                  color: 'var(--toast-color)',
+                  border: '1px solid var(--toast-border)',
+                },
+              }}
+            />
+          </BrowserRouter>
+        </ThemeProvider>
+      </HelmetProvider>
+    </AppErrorBoundary>
+  );
 }
 
-export default App
+export default App;

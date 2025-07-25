@@ -10,7 +10,7 @@ function Footer() {
   };
 
   return (
-    <footer className="scroll-mt-16 p-4 text-center md:flex justify-between">
+    <footer className="scroll-mt-16 p-4 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24 text-center md:flex justify-between w-full">
       <p className=" text-zinc-600 self-center mt-2 md:mt-0 dark:text-zinc-300 text-sm text-center font-light">
         {user_info.footer.replace("{year}", new Date().getFullYear())}
       </p>

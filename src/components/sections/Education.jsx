@@ -5,7 +5,7 @@ function Education() {
   return (
     <section
       id="education"
-      className="scroll-mt-16 flex flex-col items-center text-center py-16 px-6 bg-gradient-to-r"
+      className="scroll-mt-16 flex flex-col items-center text-center py-16 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24 bg-gradient-to-r"
     >
       <div className="w-full">
         <div className="flex justify-center items-center">
