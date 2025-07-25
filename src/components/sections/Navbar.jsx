@@ -55,16 +55,18 @@ function Navbar() {
   const handleNavClick = (href) => {
     scrollToElement(href);
     setIsMenuOpen(false);
+    // Ensure menu closes after scrolling
+    setTimeout(() => setIsMenuOpen(false), 100);
   };
 
   return (
     <>
       <motion.nav
         className={cn(
-          "sticky top-0 z-50 transition-all duration-300",
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           isScrolled
-            ? "bg-white/80 dark:bg-zinc-950/80 shadow-lg backdrop-blur-lg border-b border-zinc-200/20 dark:border-zinc-800/20"
-            : "bg-transparent"
+            ? "bg-white/95 dark:bg-zinc-950/95 shadow-lg backdrop-blur-lg border-b border-zinc-200/20 dark:border-zinc-800/20"
+            : "bg-white/10 dark:bg-zinc-950/10 backdrop-blur-sm"
         )}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -91,7 +93,10 @@ function Navbar() {
               {navigation.map((item, index) => (
                 <motion.button
                   key={item.href}
-                  onClick={() => handleNavClick(item.href)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(item.href);
+                  }}
                   className="relative text-zinc-700 dark:text-zinc-300 hover:text-red-600 dark:hover:text-red-400 font-medium transition-colors duration-300 group"
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -214,7 +219,10 @@ function Navbar() {
                   {navigation.map((item, index) => (
                     <motion.button
                       key={item.href}
-                      onClick={() => handleNavClick(item.href)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleNavClick(item.href);
+                      }}
                       className="block w-full text-left py-3 px-4 rounded-lg text-zinc-700 dark:text-zinc-300 hover:text-red-600 dark:hover:text-red-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 font-medium transition-all duration-300"
                       initial={{ opacity: 0, x: 20 }}
                       animate={{ opacity: 1, x: 0 }}

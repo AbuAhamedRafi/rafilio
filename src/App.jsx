@@ -11,7 +11,7 @@ function App() {
     <AppErrorBoundary>
       <HelmetProvider>
         <ThemeProvider>
-          <BrowserRouter basename="/rafilio">
+          <BrowserRouter>
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="*" element={<NotFound />} />
