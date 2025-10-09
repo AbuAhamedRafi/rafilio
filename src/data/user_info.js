@@ -36,6 +36,13 @@ const info = {
 		},
 
         {
+            title: "Business Portfolio Website",
+            description: "A business portfolio Website for a local business. It is a static website built with React and Tailwind CSS, hosted on Vercel. I worked on this project as a freelancer.",
+            technologies: "React, Tailwind, Vercel",
+            link: "https://www.safesolutioninternational.org/",
+        },
+
+        {
 			title: "Frame Fit",
 			description: "Developed a web application with features including image cropping, resizing, and overlay customization using Fabric.js and Blade, allowing users to personalize and download framed images. Integrated an admin dashboard built with Filament PHP to manage frames and monitor download metrics effectively.",
             technologies: "Laravel with Blade, Tailwind",
@@ -53,7 +60,7 @@ const info = {
 
         
 		{
-			title: "Vote App - Backend",
+			title: "Voting App - Backend",
 			description: "Developed a dynamic voting API backend with Laravel, supporting real-time vote updates and seamlesscategory-based voting with customizable options. Implemented API security measures, including HTTPS, JWT (JSON Web Tokens) authentication. Tested endpoints using Postman and integrated tools for API debugging and validation.",
 			technologies: "Laravel, PHP , Rest API",
 			github: "https://github.com/AbuAhamedRafi/VoteApp_backend",
@@ -91,7 +98,12 @@ const info = {
             duration: "March 2025 - Present",
             image: "jbc.png",
             descriptions: [
-                "Will work on Backend and Specializing in PHP and Laravel.",
+                "Working on backend development using Laravel and REST APIs.",
+                "Breaking the technological limitations by working with Django, Fast API, DRF and many more.",
+                "Collaborating with cross-functional teams to define, design, and ship new features.",
+                "Ensuring the performance, quality, and responsiveness of production ready applications.",
+                "Identifying and correcting bottlenecks and fixing bugs.",
+                "Maintaining code quality, organization, and automatization."
             ]
         },
         {
