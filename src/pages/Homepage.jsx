@@ -30,8 +30,8 @@ function Homepage() {
             <Projects />
             <Education />
             <Experience />
-            <Certifications />
             <Skills />
+            <Certifications />
             <Resume />
             <Contact />
             <Footer theme={theme} />
