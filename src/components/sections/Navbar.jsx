@@ -11,6 +11,7 @@ const navigation = [
   { href: "projects", label: "Projects" },
   { href: "education", label: "Education" },
   { href: "experience", label: "Experience" },
+  { href: "skills", label: "Skills" },
   { href: "certificates", label: "Certifications" },
   { href: "resume", label: "Resume" },
   { href: "contact", label: "Contact" },
@@ -40,15 +41,15 @@ function Navbar() {
 
     if (isMenuOpen) {
       document.addEventListener("mousedown", handleClickOutside);
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [isMenuOpen]);
 
