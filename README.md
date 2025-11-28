@@ -2,7 +2,6 @@
 
 A modern, responsive portfolio website built with React, Tailwind CSS, and Framer Motion. This portfolio showcases my projects, experience, skills, and achievements as a Software Engineer.
 
-![Portfolio Preview](./public/photo.jpg)
 
 ## ✨ Features
 
