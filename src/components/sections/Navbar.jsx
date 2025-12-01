@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { motion, AnimatePresence } from "framer-motion";
@@ -76,18 +77,22 @@ function Navbar() {
         <div className="w-full py-4 px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <motion.a
-              href="/"
-              className="flex items-center gap-2"
+            {/* Logo */}
+            <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <img
-                className="w-10 h-10 rounded-full hover:shadow-xl transition-shadow duration-300"
-                src={getAssetPath("favicon.png")}
-                alt="Abu Ahamed Rafi"
-              />
-            </motion.a>
+              <Link
+                to="/"
+                className="flex items-center gap-2"
+              >
+                <img
+                  className="w-10 h-10 rounded-full hover:shadow-xl transition-shadow duration-300"
+                  src={getAssetPath("favicon.png")}
+                  alt="Abu Ahamed Rafi"
+                />
+              </Link>
+            </motion.div>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-8">
