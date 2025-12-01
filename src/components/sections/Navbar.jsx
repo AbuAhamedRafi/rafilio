@@ -85,6 +85,12 @@ function Navbar() {
               <Link
                 to="/"
                 className="flex items-center gap-2"
+                onClick={() => {
+                  window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 <img
                   className="w-10 h-10 rounded-full hover:shadow-xl transition-shadow duration-300"

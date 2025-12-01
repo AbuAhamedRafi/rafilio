@@ -21,6 +21,20 @@ const info = {
   // ============ PROJECTS ============
   projects: [
     {
+      title: "Autonomous Expense Tracker Telegram Bot",
+      description:
+        "A truly intelligent Telegram bot powered by Google Gemini 2.0 that autonomously manages finances using function calling. It allows natural language interaction to query, create, and analyze expenses in Notion, replacing rigid commands with AI-driven decision making.",
+      technologies: [
+        "Python",
+        "Django",
+        "Google Gemini 2.0",
+        "Notion API",
+        "Telegram Bot API",
+      ],
+      category: "Backend",
+      github: "https://github.com/AbuAhamedRafi/ExpenseTrackerBot",
+    },
+    {
       title: "Business Portfolio Website",
       description:
         "A business portfolio Website for a local business. It is a static website built with React and Tailwind CSS, hosted on Vercel. I worked on this project as a freelancer.",
