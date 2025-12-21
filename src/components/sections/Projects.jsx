@@ -7,9 +7,13 @@ import Fade from "../Fade.jsx";
 
 const projectCategories = [
   { id: "all", label: "All Projects", icon: "🚀" },
-  { id: "Full-Stack", label: "Full-Stack", icon: "⚡" },
+  { id: "SaaS / Backend", label: "SaaS / Backend", icon: "☁️" },
+  { id: "Logistics / Enterprise", label: "Logistics / Enterprise", icon: "🚛" },
+  { id: "Open Source / Enterprise", label: "Open Source", icon: "🔓" },
+  { id: "Backend / Security", label: "Backend / Security", icon: "🔒" },
   { id: "Backend", label: "Backend", icon: "⚙️" },
   { id: "Frontend", label: "Frontend", icon: "🎨" },
+  { id: "Full-Stack", label: "Full-Stack", icon: "⚡" },
   { id: "Machine Learning", label: "Machine Learning", icon: "🤖" },
 ];
 
