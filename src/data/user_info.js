@@ -21,6 +21,57 @@ const info = {
   // ============ PROJECTS ============
   projects: [
     {
+      title: "Enterprise Document & Workspace API",
+      description:
+        "A production-grade SaaS backend for team collaboration. Features multi-tenant workspace architecture, granular RBAC (Owner/Editor/Viewer), and real-time features using Django Channels. Integrated Celery/Redis for background processing and AWS S3 for secure document storage.",
+      technologies: [
+        "Django 5.2",
+        "DRF",
+        "Celery",
+        "Redis",
+        "PostgreSQL",
+        "AWS S3",
+        "Docker",
+      ],
+      category: "SaaS / Backend",
+      github: "Private - JB Connect",
+    },
+    {
+      title: "Kouraku Transport Management System",
+      description:
+        "A comprehensive logistics API for a Japanese transport firm. Built using the Repository-Service pattern for modularity. Implemented complex multi-tenant data isolation via Global Scopes, OAuth 2.0 authentication, and automated PDF/Excel reporting systems.",
+      technologies: [
+        "Laravel 10",
+        "PostgreSQL",
+        "Passport",
+        "Docker",
+        "Spatie",
+        "DomPDF",
+      ],
+      category: "Logistics / Enterprise",
+      github: "Private - CSL",
+    },
+    {
+      title: "Nextcloud Custom App Ecosystem",
+      description:
+        "Developed and maintained custom Nextcloud applications across versions 16 through 32. Focused on extending core functionality for enterprise clients, ensuring API compatibility during major version migrations and optimizing file-handling workflows.",
+      technologies: ["PHP", "Nextcloud API", "Vue.js", "JavaScript", "Docker"],
+      category: "Open Source / Enterprise",
+    },
+    {
+      title: "Leather Doctor API",
+      description:
+        "High-security RESTful API for service management. Designed with a focus on protection against timing attacks (hash_equals) and high-volume data handling. Includes comprehensive documentation and optimized binary file streaming for order attachments.",
+      technologies: [
+        "Laravel",
+        "MySQL",
+        "API Resources",
+        "Middleware",
+        "Docker",
+      ],
+      category: "Backend / Security",
+    },
+    {
       title: "Business Portfolio Website",
       description:
         "A business portfolio Website for a local business. It is a static website built with React and Tailwind CSS, hosted on Vercel. I worked on this project as a freelancer.",
@@ -89,7 +140,7 @@ const info = {
       ],
       category: "Frontend",
       github: "https://github.com/AbuAhamedRafi/rafilio",
-      link: "https://abuahamedrafi.me",
+      link: "https://abuahamedrafi.com",
     },
   ],
 

@@ -2,11 +2,10 @@
 
 A modern, responsive portfolio website built with React, Tailwind CSS, and Framer Motion. This portfolio showcases my projects, experience, skills, and achievements as a Software Engineer.
 
-
 ## ✨ Features
 
 - **Modern Design**: Clean, professional design with dark/light theme support
-- **Responsive**: Fully responsive across all devices (mobile, tablet, desktop)  
+- **Responsive**: Fully responsive across all devices (mobile, tablet, desktop)
 - **Smooth Animations**: Beautiful animations powered by Framer Motion
 - **Performance Optimized**: Fast loading with optimized images and code splitting
 - **SEO Friendly**: Proper meta tags and structured data
@@ -17,46 +16,54 @@ A modern, responsive portfolio website built with React, Tailwind CSS, and Frame
 ## 🛠️ Tech Stack
 
 ### Core Technologies
+
 - **React 18** - Frontend framework
 - **Vite** - Build tool and development server
 - **Tailwind CSS** - Utility-first CSS framework
 - **Framer Motion** - Animation library
 
 ### UI & UX
+
 - **Heroicons** - Beautiful SVG icons
 - **React Icons** - Additional icon library
 - **React Hot Toast** - Elegant notifications
 - **React Helmet Async** - Document head management
 
 ### Developer Experience
+
 - **ESLint** - Code linting
 - **PostCSS** - CSS processing
 - **Autoprefixer** - CSS vendor prefixes
 
 ### Deployment
+
 - **GitHub Pages** - Static site hosting
 - **Custom Domain** - Professional domain setup
 
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js (v18 or higher)
 - npm or yarn
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/AbuAhamedRafi/rafilio.git
    cd rafilio
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -112,43 +119,46 @@ rafilio/
 ## 🎨 Customization
 
 ### Personal Information
+
 Update your personal information in `src/data/user_info.js`:
 
 ```javascript
 const info = {
-    main: {
-        name: "Your Name",
-        description: "Your description...",
-        role: "Your Role",
-        photo: "../your-photo.jpg",
-        email: "your-email@example.com",
-    },
-    socials: {
-        // Your social links
-    },
-    projects: [
-        // Your projects
-    ],
-    // ... other sections
+  main: {
+    name: "Your Name",
+    description: "Your description...",
+    role: "Your Role",
+    photo: "../your-photo.jpg",
+    email: "your-email@example.com",
+  },
+  socials: {
+    // Your social links
+  },
+  projects: [
+    // Your projects
+  ],
+  // ... other sections
 };
 ```
 
 ### Theme Colors
+
 Customize the color scheme in `tailwind.config.js`:
 
 ```javascript
 theme: {
-    extend: {
-        colors: {
-            primary: {
-                // Your custom colors
-            }
-        }
+  extend: {
+    colors: {
+      primary: {
+        // Your custom colors
+      }
     }
+  }
 }
 ```
 
 ### Adding New Sections
+
 1. Create a new component in `src/components/sections/`
 2. Import and add it to `src/pages/Homepage.jsx`
 3. Update the navigation in `src/components/sections/Navbar.jsx`
@@ -158,6 +168,7 @@ theme: {
 ### GitHub Pages (Recommended)
 
 1. **Update package.json** (already configured)
+
    ```json
    {
      "homepage": "https://yourusername.github.io/yourrepo",
@@ -202,7 +213,8 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 👤 Author
 
 **Abu Ahamed Rafi**
-- Website: [abuahamedrafi.me](https://abuahamedrafi.me)
+
+- Website: [abuahamedrafi.com](https://abuahamedrafi.com)
 - GitHub: [@AbuAhamedRafi](https://github.com/AbuAhamedRafi)
 - LinkedIn: [abu-ahamed-rafi](https://www.linkedin.com/in/abu-ahamed-rafi/)
 - Email: abuahamedrafi@gmail.com
