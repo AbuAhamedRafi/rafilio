@@ -49,7 +49,7 @@ const info = {
         "DomPDF",
       ],
       category: "Logistics / Enterprise",
-      github: "Private - CSL",
+      github: "Private - JB Connect",
     },
     {
       title: "Nextcloud Custom App Ecosystem",
@@ -70,6 +70,7 @@ const info = {
         "Docker",
       ],
       category: "Backend / Security",
+      github: "Private - JB Connect",
     },
     {
       title: "Autonomous Expense Tracker Telegram Bot",
