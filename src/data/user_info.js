@@ -199,7 +199,7 @@ const info = {
       ],
     },
     {
-      position: "Trainee Software Engineer",
+      position: "Junior Software Engineer",
       company: "Computer Services Limited",
       duration: "Aug 2024 - Feb 2025",
       image: "csl.jpeg",
