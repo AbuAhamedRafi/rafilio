@@ -189,12 +189,6 @@ theme: {
 - **Netlify**: Drag and drop the `dist` folder after running `npm run build`
 - **Custom Server**: Upload the `dist` folder contents
 
-## 📱 Browser Support
-
-- Chrome (last 2 versions)
-- Firefox (last 2 versions)
-- Safari (last 2 versions)
-- Edge (last 2 versions)
 
 ## 🤝 Contributing
 
